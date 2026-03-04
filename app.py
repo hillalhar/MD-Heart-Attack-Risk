@@ -3,8 +3,8 @@ import joblib
 import pandas as pd
 
 # Load preprocessor dan model dari folder artifacts
-scaler = joblib.load("artifacts/preprocessor.pkl")
-model = joblib.load("artifacts/model.pkl")
+scaler = joblib.load("preprocessor.pkl")
+model = joblib.load("model.pkl")
 
 def make_prediction(features):
     columns = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
@@ -49,4 +49,5 @@ def main():
             st.success(f'The prediction is: {result} (Low Risk of Heart Attack)')
 
 if __name__ == '__main__':
+
     main()
