@@ -1,4 +1,8 @@
 streamlit
+numpy
 pandas
 scikit-learn
 joblib
+protobuf
+setuptools
+wheel
